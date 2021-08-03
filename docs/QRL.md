@@ -15,7 +15,7 @@ Assume this HTML:
 ```
 
 1. First the QRLs are often embedded in HTML. In such a case the relative nature should be from HTML not from the framework. However the HTML URL often has custom URL due to routing, and so really URL has nothing to do with where the actual location of the code resides.
-2. To compose libraries, the library author does not know how the files will be layed out (or bundled) on the application server. So there needs to be a way to reefer to resources but give the configuration to the application developer.
+2. To compose libraries, the library author does not know how the files will be layed out (or bundled) on the application server. So there needs to be a way to refer to resources but give the configuration to the application developer.
 
 For the above two reasons relative imports just don't make much sense in Qwik and should be avoided. Instead we need to use absolute URLs. However sprinkling absolute URLs all over the code base is equally problematic as it makes the code hard to refactor or move.
 
